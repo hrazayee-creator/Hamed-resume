@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>حامد آزادمنش | کارشناس فنی</title>
+<meta name="description" content="حامد آزادمنش، کارشناس فنی با پنج سال تجربه در سخت‌افزار، نرم‌افزار و شبکه.">
+<meta name="theme-color" content="#061110">
+<meta name="color-scheme" content="dark light">
+<meta name="format-detection" content="telephone=no">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="حامد آزادمنش">
+<meta property="og:title" content="حامد آزادمنش | کارشناس فنی">
+<meta property="og:description" content="پنج سال تجربه کاری. نصب پرینتر و ویندوز، راه‌اندازی شبکه، برنامه‌های جانبی و پشتیبانی از راه دور.">
+<meta property="og:type" content="profile">
+<link rel="preload" as="image" href="photo.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- The font loads in the background: the page paints at once with the phone's own Persian font, then Vazirmatn takes over. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400..800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400..800&display=swap"></noscript>
+<script>
+(function () {
+  var d = document.documentElement;
+  try { d.setAttribute("data-theme", localStorage.getItem("theme") || "dark"); } catch (e) { d.setAttribute("data-theme", "dark"); }
+  try { if (localStorage.getItem("lang") === "en") { d.lang = "en"; d.dir = "ltr"; } } catch (e) {}
+  var ua = navigator.userAgent || "";
+  var inApp = /Instagram|FBAN|FBAV|Telegram|MicroMessenger|WhatsApp|Snapchat|Line\/|; wv\)/i.test(ua) || (/(iPhone|iPod|iPad)/.test(ua) && !/Safari|CriOS|FxiOS/.test(ua));
+  var c = navigator.connection || {};
+  var weak = (navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4) || (navigator.deviceMemory && navigator.deviceMemory <= 2) || c.saveData;
+  if (inApp || weak) d.className += " lite";
+  if (inApp) d.className += " inapp";
+})();
+</script>
+<style>
+/* Layout: one calm column of glass panels over a slow aurora. Photo card, four contact tiles, experience, services, reasons.
+   Performance rule: no blur filters and no animated paint. Only three soft gradients move, and only by transform.
+   Color: ink-green board, translucent panels, copper accent, teal secondary; brand colors only on the contact tiles. */
+:root {
+  --board: #eef4f2; --board-2: #dfeae6; --board-a: #d9ebe6; --board-b: #b9d6cf;
+  --panel: rgba(255,255,255,.7); --card: rgba(255,255,255,.85); --bar: rgba(255,255,255,.92);
+  --edge: rgba(255,255,255,.95); --line: rgba(11,31,29,.1); --shine: rgba(255,255,255,.9);
+  --shadow: 0 18px 38px -24px rgba(20,60,55,.45);
+  --ink: #0b1f1d; --ink-soft: #3d5651;
+  --copper: #a94f06; --copper-2: #d9822b; --copper-soft: rgba(169,79,6,.12); --on-copper: #ffffff; --save-badge: rgba(255,255,255,.24);
+  --trace: #0b6a5f; --trace-soft: rgba(11,106,95,.12);
+  --o1: rgba(20,150,135,.42); --o2: rgba(236,150,60,.36); --o3: rgba(60,130,210,.30);
+  --f-fa: "Vazirmatn", system-ui, -apple-system, "SF Arabic", "Segoe UI", "Noto Sans Arabic", "Noto Sans", Tahoma, sans-serif;
+  --f-en: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --lh: 1.95;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --board: #050d0c; --board-2: #0a1c1a; --board-a: #12302d; --board-b: #08201e;
+    --panel: rgba(12,30,28,.68); --card: rgba(255,255,255,.06); --bar: rgba(10,26,24,.9);
+    --edge: rgba(255,255,255,.16); --line: rgba(255,255,255,.09); --shine: rgba(255,255,255,.12);
+    --shadow: 0 18px 38px -24px rgba(0,0,0,.85);
+    --ink: #f1f7f5; --ink-soft: #b9cfca;
+    --copper: #f2a64d; --copper-2: #ffbf73; --copper-soft: rgba(242,166,77,.16); --on-copper: #1a0f02; --save-badge: rgba(0,0,0,.14);
+    --trace: #4fd1c0; --trace-soft: rgba(79,209,192,.14);
+    --o1: rgba(30,180,160,.42); --o2: rgba(245,150,55,.30); --o3: rgba(70,120,230,.34);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --board: #050d0c; --board-2: #0a1c1a; --board-a: #12302d; --board-b: #08201e;
+  --panel: rgba(12,30,28,.68); --card: rgba(255,255,255,.06); --bar: rgba(10,26,24,.9);
+  --edge: rgba(255,255,255,.16); --line: rgba(255,255,255,.09); --shine: rgba(255,255,255,.12);
+  --shadow: 0 18px 38px -24px rgba(0,0,0,.85);
+  --ink: #f1f7f5; --ink-soft: #b9cfca;
+  --copper: #f2a64d; --copper-2: #ffbf73; --copper-soft: rgba(242,166,77,.16); --on-copper: #1a0f02; --save-badge: rgba(0,0,0,.14);
+  --trace: #4fd1c0; --trace-soft: rgba(79,209,192,.14);
+  --o1: rgba(30,180,160,.42); --o2: rgba(245,150,55,.30); --o3: rgba(70,120,230,.34);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+[hidden] { display: none !important; }
+html { background: var(--board); -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+html[lang="en"] { --lh: 1.65; }
+body { margin: 0; background: var(--board); color: var(--ink); font-family: var(--f-fa); font-size: 16px; line-height: var(--lh); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+html[lang="en"] body { font-family: var(--f-en); }
+h1, h2, h3, p, ul { margin: 0; padding: 0; }
+ul { list-style: none; }
+a { color: inherit; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--trace); outline-offset: 3px; }
+svg.i { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+p, li, h3 { overflow-wrap: break-word; word-break: normal; hyphens: manual; text-align: start; }
+p, li { text-wrap: pretty; }
+
+/* animated background: three gradients moving by transform only (runs on the GPU, no repaint) */
+.bg { position: fixed; left: 0; top: 0; right: 0; bottom: 0; z-index: 0; overflow: hidden; pointer-events: none; background: linear-gradient(165deg, var(--board) 0%, var(--board-2) 100%); contain: layout paint; }
+.orb { position: absolute; width: 70vmax; height: 70vmax; border-radius: 50%; will-change: transform; transform: translate3d(0,0,0); }
+.o1 { left: -24vmax; top: -26vmax; background: radial-gradient(circle, var(--o1) 0%, transparent 66%); animation: m1 34s ease-in-out infinite alternate; }
+.o2 { right: -28vmax; top: 18vmax; background: radial-gradient(circle, var(--o2) 0%, transparent 66%); animation: m2 42s ease-in-out infinite alternate; }
+.o3 { left: -4vmax; bottom: -38vmax; background: radial-gradient(circle, var(--o3) 0%, transparent 66%); animation: m3 50s ease-in-out infinite alternate; }
+@keyframes m1 { to { transform: translate3d(22vw, 16vh, 0); } }
+@keyframes m2 { to { transform: translate3d(-26vw, 12vh, 0); } }
+@keyframes m3 { to { transform: translate3d(24vw, -18vh, 0); } }
+.scrolling .orb { animation-play-state: paused; }
+.lite .orb { animation: none; }
+
+.app { position: relative; z-index: 1; min-height: 100vh; padding-top: calc(16px + env(safe-area-inset-top, 0px)); padding-bottom: calc(112px + env(safe-area-inset-bottom, 0px)); padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.wrap { max-width: 920px; margin-left: auto; margin-right: auto; display: flex; flex-direction: column; gap: 16px; }
+
+.glass { position: relative; border-radius: 28px; padding: 26px; min-width: 0; background: var(--panel); border: 1px solid var(--edge); box-shadow: inset 0 1px 0 var(--shine), var(--shadow); }
+.card { border-radius: 20px; padding: 18px; min-width: 0; background: var(--card); border: 1px solid var(--line); }
+h2 { display: flex; align-items: center; gap: 12px; font-size: 22px; font-weight: 800; line-height: 1.4; margin-bottom: 18px; }
+.hic { width: 40px; height: 40px; border-radius: 13px; display: grid; place-items: center; background: var(--copper-soft); color: var(--copper); flex: none; }
+h3 { font-size: 17px; font-weight: 700; line-height: 1.5; }
+.card p { color: var(--ink-soft); font-size: 15.5px; }
+.num { direction: ltr; unicode-bidi: isolate; }
+html[dir="rtl"] .num { text-align: right; }
+
+/* notice shown only inside messenger / in-app browsers */
+.notice { display: none; align-items: center; gap: 10px; padding: 12px 14px; border-radius: 18px; background: var(--copper-soft); border: 1px solid var(--line); font-size: 14px; line-height: 1.7; }
+.inapp .notice { display: flex; }
+.notice p { flex: 1; min-width: 0; }
+.notice button { font: inherit; font-size: 13.5px; font-weight: 700; padding: 7px 14px; border-radius: 12px; border: 0; background: var(--copper); color: var(--on-copper); cursor: pointer; flex: none; }
+.notice .x { width: 30px; height: 30px; padding: 0; background: transparent; color: var(--ink-soft); display: grid; place-items: center; }
+
+.topbar { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.status { display: inline-flex; align-items: center; gap: 9px; font-size: 14px; color: var(--ink-soft); padding: 7px 14px; border-radius: 999px; background: var(--panel); border: 1px solid var(--edge); }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: #2fd07f; box-shadow: 0 0 0 4px rgba(47,208,127,.2); flex: none; }
+.icons { display: flex; gap: 8px; }
+.ibtn { width: 40px; height: 40px; display: grid; place-items: center; border-radius: 50%; color: var(--ink); background: var(--panel); border: 1px solid var(--edge); cursor: pointer; font: inherit; padding: 0; }
+
+/* hero */
+.hero { display: grid; grid-template-columns: auto 1fr; gap: 18px 20px; align-items: center; }
+.photo { width: 112px; height: 112px; border-radius: 50%; padding: 3px; background: conic-gradient(var(--copper), var(--trace), var(--copper-2), var(--copper)); }
+.face { position: relative; width: 100%; height: 100%; border-radius: 50%; overflow: hidden; display: grid; place-items: center; background: radial-gradient(circle at 50% 38%, var(--o2) 0%, transparent 58%), radial-gradient(circle at 20% 90%, var(--o1) 0%, transparent 60%), linear-gradient(165deg, var(--board-a), var(--board-b)); }
+.face b { display: none; font-size: 38px; font-weight: 800; color: var(--copper); }
+.face.noimg b { display: block; }
+.face img { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; transform: scale(1.24); transform-origin: 50% 24%; }
+h1 { font-size: clamp(28px, 7vw, 46px); font-weight: 800; line-height: 1.3; text-wrap: balance; }
+.role { font-size: 17px; font-weight: 600; color: var(--copper); margin-top: 2px; }
+.cochip { display: inline-flex; align-items: center; gap: 8px; margin-top: 10px; font-size: 14px; font-weight: 500; padding: 5px 14px; border-radius: 999px; background: var(--trace-soft); border: 1px solid var(--line); }
+.cochip svg.i { width: 16px; height: 16px; color: var(--trace); }
+.lead { grid-column: 1 / -1; color: var(--ink-soft); font-size: 16px; max-width: 62ch; }
+.stats { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.stat { padding: 12px 8px; border-radius: 18px; text-align: center; background: var(--card); border: 1px solid var(--line); min-width: 0; }
+.stat b { display: block; font-size: 18px; font-weight: 800; line-height: 1.5; white-space: nowrap; }
+.stat span { display: block; font-size: 13px; color: var(--ink-soft); line-height: 1.6; }
+.save { grid-column: 1 / -1; display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-radius: 20px; text-decoration: none; color: var(--on-copper); background: linear-gradient(135deg, var(--copper), var(--copper-2)); box-shadow: inset 0 1px 0 rgba(255,255,255,.35), 0 14px 26px -16px var(--copper); }
+.save:active { transform: scale(.99); }
+button.save { font: inherit; border: 0; width: 100%; text-align: start; cursor: pointer; }
+.save-ic { width: 42px; height: 42px; border-radius: 14px; display: grid; place-items: center; background: var(--save-badge); flex: none; }
+.save-tx { flex: 1; min-width: 0; }
+.save-tx b { display: block; font-size: 16px; font-weight: 800; line-height: 1.5; }
+.save-tx small { display: block; font-size: 12.5px; opacity: .85; line-height: 1.5; }
+.save-go { width: 20px; height: 20px; opacity: .8; }
+
+/* contact tiles: compact, icon beside text */
+.tiles { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+.tile { display: flex; align-items: center; gap: 11px; padding: 10px 12px; min-width: 0; border-radius: 18px; text-decoration: none; background: var(--panel); border: 1px solid var(--edge); box-shadow: inset 0 1px 0 var(--shine), 0 10px 22px -18px rgba(0,0,0,.6); }
+.tile:active { transform: scale(.98); }
+.tile .ic { width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; color: #fff; flex: none; box-shadow: inset 0 1px 0 rgba(255,255,255,.45), 0 4px 10px -4px rgba(0,0,0,.45); }
+.tile .ic svg.i { width: 21px; height: 21px; stroke-width: 1.9; }
+.tile .tx { display: block; min-width: 0; }
+.tile b { display: block; font-size: 14.5px; font-weight: 700; line-height: 1.5; }
+.tile small { display: block; font-size: 12.5px; color: var(--ink-soft); line-height: 1.5; overflow-wrap: anywhere; }
+.t-call { background: linear-gradient(145deg, #46e08f, #12a150); }
+.t-wa { background: linear-gradient(145deg, #4be37d, #0e8f6a); }
+.t-mail { background: linear-gradient(145deg, #62b4ff, #2a58d6); }
+.t-ig { background: linear-gradient(45deg, #f9ce34, #ee2a7b 55%, #6228d7); }
+
+/* experience */
+.job-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+.job-head h3 { font-size: 19px; font-weight: 800; }
+.job-head .co { color: var(--copper); font-weight: 600; font-size: 15.5px; }
+.badge { font-size: 13.5px; font-weight: 600; padding: 5px 14px; border-radius: 999px; background: var(--copper-soft); border: 1px solid var(--line); white-space: nowrap; }
+.exsum { font-size: 16.5px; font-weight: 600; margin-bottom: 14px; padding: 2px 14px; }
+html[dir="rtl"] .exsum { border-right: 3px solid var(--copper); }
+html[dir="ltr"] .exsum { border-left: 3px solid var(--copper); }
+.ticks { display: grid; gap: 10px; }
+.ticks li { display: flex; gap: 12px; align-items: flex-start; padding: 13px 16px; border-radius: 18px; background: var(--card); border: 1px solid var(--line); color: var(--ink-soft); font-size: 15.5px; }
+.ticks svg.i { width: 18px; height: 18px; margin-top: .55em; color: var(--trace); stroke-width: 2.4; }
+
+/* services and reasons: one card pattern, icon and title on one row */
+.list { display: grid; grid-template-columns: 1fr; gap: 12px; }
+.item-h { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+.sic { width: 42px; height: 42px; border-radius: 14px; display: grid; place-items: center; background: var(--trace-soft); color: var(--trace); flex: none; }
+.sic.cu { background: var(--copper-soft); color: var(--copper); }
+.sic svg.i { width: 22px; height: 22px; }
+
+.foot { text-align: center; font-size: 13.5px; color: var(--ink-soft); }
+
+.tabbar { position: fixed; z-index: 5; left: 0; right: 0; bottom: 0; display: flex; justify-content: center; padding: 0 max(10px, env(safe-area-inset-left, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)) max(10px, env(safe-area-inset-right, 0px)); pointer-events: none; }
+.tabs { pointer-events: auto; display: flex; align-items: stretch; gap: 2px; padding: 6px; border-radius: 26px; width: 100%; max-width: 560px; background: var(--bar); border: 1px solid var(--edge); box-shadow: inset 0 1px 0 var(--shine), 0 10px 26px -14px rgba(0,0,0,.6); }
+.tab, .act { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; padding: 7px 2px; border-radius: 19px; font: inherit; font-size: 11.5px; font-weight: 600; line-height: 1.4; color: var(--ink-soft); text-decoration: none; background: transparent; border: 0; cursor: pointer; white-space: nowrap; }
+.tab svg.i, .act svg.i { width: 20px; height: 20px; }
+.tab.on { background: var(--copper-soft); color: var(--ink); }
+.sep { flex: none; width: 1px; margin: 8px 4px; background: var(--line); }
+.act.share { color: var(--ink); }
+.act.install { color: var(--on-copper); background: linear-gradient(135deg, var(--copper), var(--copper-2)); }
+section { scroll-margin-top: 16px; }
+
+.toast { position: fixed; z-index: 6; left: 50%; bottom: calc(98px + env(safe-area-inset-bottom, 0px)); max-width: calc(100% - 32px); padding: 10px 18px; border-radius: 16px; font-size: 14px; line-height: 1.7; text-align: center; color: var(--ink); background: var(--bar); border: 1px solid var(--edge); box-shadow: 0 10px 26px -12px rgba(0,0,0,.6); opacity: 0; visibility: hidden; transform: translate(-50%, 8px); transition: opacity .2s ease, transform .2s ease, visibility .2s; pointer-events: none; }
+.toast.show { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
+
+@media (min-width: 720px) {
+  .glass { padding: 30px; }
+  .photo { width: 144px; height: 144px; }
+  .face b { font-size: 48px; }
+  .hero { gap: 20px 28px; }
+  .stat b { font-size: 21px; }
+  .save { max-width: 420px; }
+  .tiles { grid-template-columns: repeat(4, 1fr); }
+  .list { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 380px) { .glass { padding: 20px; border-radius: 24px; } .tile { padding: 9px 10px; gap: 9px; } }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+@media (prefers-reduced-motion: reduce) { .orb { animation: none; } .toast { transition: none; } }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/><path transform="translate(6.6 6.4) scale(.44)" stroke-width="4" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="3.5"/><path d="m22 7.5-10 6.5L2 7.5"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><path d="M17.6 6.4h.01"/></symbol>
+    <symbol id="i-save" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M16 11h6"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8M16 6l-4-4-4 4M12 2v13"/></symbol>
+    <symbol id="i-install" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M12 8v8M8 12h8"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+    <symbol id="i-theme" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></symbol>
+    <symbol id="i-brief" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="3"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2M2 13h20"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v12M7 11l5 5 5-5M5 20h14"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-printer" viewBox="0 0 24 24"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8" rx="1"/></symbol>
+    <symbol id="i-windows" viewBox="0 0 24 24"><path d="M3 5.6 10.5 4.5v6.3H3zM12 4.3 21 3v7.8h-9zM3 12.2h7.5v6.3L3 17.4zM12 12.2h9V21l-9-1.3z"/></symbol>
+    <symbol id="i-apps" viewBox="0 0 24 24"><rect x="3" y="3" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="2"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="2"/></symbol>
+    <symbol id="i-remote" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="3"/><path d="M8 21h8M12 17v4M10 7.5l5.2 2.1-2.2 1.3-1.2 2.2z"/></symbol>
+    <symbol id="i-chip" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2.5"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></symbol>
+    <symbol id="i-net" viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.6"/><circle cx="5" cy="19" r="2.6"/><circle cx="19" cy="19" r="2.6"/><path d="M12 7.6v4M12 11.6H5v4.8M12 11.6h7v4.8"/></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2.5 9a15 15 0 0 1 19 0M5.8 12.6a10 10 0 0 1 12.4 0M9 16.2a5 5 0 0 1 6 0M12 19.8h.01"/></symbol>
+    <symbol id="i-idcard" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3.5"/><circle cx="9" cy="10.5" r="2.3"/><path d="M5.6 16.6c.6-1.7 1.9-2.6 3.4-2.6s2.8.9 3.4 2.6M15 9.5h3.5M15 13h3.5"/></symbol>
+  </defs>
+</svg>
+
+<div class="bg" aria-hidden="true"><div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div></div>
+
+<div class="app">
+  <main class="wrap">
+    <div class="notice" id="notice" role="note">
+      <p data-i18n="nt_text">برای ذخیره شماره و نمایش بهتر، لینک را در مرورگر اصلی گوشی باز کنید.</p>
+      <button id="noticeCopy" type="button" data-i18n="nt_btn">کپی لینک</button>
+      <button class="x" id="noticeClose" type="button" data-aria="close"><svg class="i"><use href="#i-close"/></svg></button>
+    </div>
+
+    <div class="topbar">
+      <span class="status"><i class="dot"></i><span data-i18n="status">آماده همکاری</span></span>
+      <span class="icons">
+        <button class="ibtn" id="langBtn" type="button" data-aria="lang"><svg class="i"><use href="#i-globe"/></svg></button>
+        <button class="ibtn" id="themeBtn" type="button" data-aria="theme"><svg class="i"><use href="#i-theme"/></svg></button>
+      </span>
+    </div>
+
+    <section id="about" class="glass hero">
+      <div class="photo"><div class="face"><b data-i18n="mono">ح</b><img src="photo.webp" data-aria="photo" alt="" width="720" height="720" decoding="async" onerror="this.parentNode.className+=' noimg';this.parentNode.removeChild(this)"></div></div>
+      <div>
+        <h1 data-i18n="name">حامد آزادمنش</h1>
+        <div class="role" data-i18n="role">کارشناس فنی</div>
+        <span class="cochip"><svg class="i"><use href="#i-brief"/></svg><span data-i18n="co">مینادنت، ۵ سال</span></span>
+      </div>
+      <p class="lead" data-i18n="lead">۵ سال است در شرکت نرم‌افزاری مینادنت کارشناس فنی هستم و هر روز مشکل سیستم، پرینتر، شبکه و نرم‌افزار کاربرها را حل می‌کنم. اگر کارتان گیر کرده، خوشحال می‌شوم کمک کنم؛ حضوری یا از راه دور.</p>
+      <div class="stats">
+        <div class="stat"><b data-i18n="st1v">۵ سال</b><span data-i18n="st1l">سابقه کار</span></div>
+        <div class="stat"><b data-i18n="st2v">۳ حوزه</b><span data-i18n="st2l">تخصص</span></div>
+        <div class="stat"><b data-i18n="st3v">از راه دور</b><span data-i18n="st3l">پشتیبانی</span></div>
+      </div>
+      <button class="save" id="installHero" type="button"><span class="save-ic"><svg class="i"><use href="#i-install"/></svg></span><span class="save-tx"><b data-i18n="inst">نصب برنامه روی گوشی</b><small data-i18n="inst_s">روی صفحه اصلی اضافه می‌شود</small></span><svg class="i save-go"><use href="#i-down"/></svg></button>
+    </section>
+
+    <nav class="tiles" data-aria="quick">
+      <a class="tile" id="qCall" href="#"><span class="ic t-call"><svg class="i"><use href="#i-phone"/></svg></span><span class="tx"><b data-i18n="q_call">تماس</b><small class="num" data-i18n="q_call_s">۰۹۳۷ ۲۳۰ ۱۴۲۸</small></span></a>
+      <a class="tile" id="qWa" href="#" target="_blank" rel="noopener"><span class="ic t-wa"><svg class="i"><use href="#i-wa"/></svg></span><span class="tx"><b data-i18n="q_wa">واتساپ</b><small data-i18n="q_wa_s">گفتگوی مستقیم</small></span></a>
+      <a class="tile" id="qMail" href="#"><span class="ic t-mail"><svg class="i"><use href="#i-mail"/></svg></span><span class="tx"><b data-i18n="q_mail">ایمیل</b><small data-i18n="q_mail_s">ارسال پیام</small></span></a>
+      <a class="tile" id="qIg" href="#" target="_blank" rel="noopener"><span class="ic t-ig"><svg class="i"><use href="#i-ig"/></svg></span><span class="tx"><b data-i18n="q_ig">اینستاگرام</b><small data-i18n="q_ig_s">مشاهده پیج</small></span></a>
+    </nav>
+
+    <section id="exp" class="glass">
+      <h2><span class="hic"><svg class="i"><use href="#i-brief"/></svg></span><span data-i18n="ex_h">تجربه کاری</span></h2>
+      <div class="job-head">
+        <div><h3 data-i18n="ex_role">کارشناس فنی</h3><div class="co" data-i18n="ex_co">شرکت نرم‌افزاری مینادنت</div></div>
+        <span class="badge" data-i18n="ex_dur">۵ سال، تاکنون</span>
+      </div>
+      <p class="exsum" data-i18n="ex_sum">۵ سال تجربه کاری در حوزه <span dir="ltr">(Helpdesk)</span> در شرکت نرم‌افزاری مینادنت</p>
+      <ul class="ticks">
+        <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="ex1">درخواست‌های پشتیبانی کاربران را می‌گیرم و تا وقتی مشکل کامل حل نشده پیگیری می‌کنم.</span></li>
+        <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="ex2">مشکلات سخت‌افزاری و نرم‌افزاری سیستم‌ها را بررسی و برطرف می‌کنم.</span></li>
+        <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="ex3">پرینتر نصب و راه‌اندازی می‌کنم، ویندوز نصب می‌کنم و برنامه‌های مورد نیاز کاربر را روی سیستم می‌گذارم.</span></li>
+        <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="ex4">شبکه را راه‌اندازی می‌کنم و علت قطعی یا کندی شبکه را پیدا و برطرف می‌کنم.</span></li>
+        <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="ex5">اگر مشکل نیاز به حضور نداشته باشد، از راه دور وصل می‌شوم و همان‌جا حلش می‌کنم.</span></li>
+      </ul>
+    </section>
+
+    <section id="svc" class="glass">
+      <h2><span class="hic"><svg class="i"><use href="#i-apps"/></svg></span><span data-i18n="sv_h">خدماتی که انجام می‌دهم</span></h2>
+      <div class="list">
+        <article class="card"><div class="item-h"><span class="sic"><svg class="i"><use href="#i-printer"/></svg></span><h3 data-i18n="sv1t">نصب و راه‌اندازی پرینتر</h3></div><p data-i18n="sv1d">درایور را نصب می‌کنم، پرینتر را به سیستم یا شبکه وصل می‌کنم و یک برگه تست می‌گیرم.</p></article>
+        <article class="card"><div class="item-h"><span class="sic cu"><svg class="i"><use href="#i-windows"/></svg></span><h3 data-i18n="sv2t">نصب ویندوز</h3></div><p data-i18n="sv2d">ویندوز را تمیز نصب می‌کنم، درایورها و تنظیمات اولیه را هم می‌گذارم و سیستم را آماده کار تحویل می‌دهم.</p></article>
+        <article class="card"><div class="item-h"><span class="sic"><svg class="i"><use href="#i-apps"/></svg></span><h3 data-i18n="sv3t">نصب برنامه‌های جانبی</h3></div><p data-i18n="sv3d">برنامه‌هایی که برای کارتان لازم است، مثل آفیس و بقیه نرم‌افزارها، نصب و تنظیم می‌شود.</p></article>
+        <article class="card"><div class="item-h"><span class="sic cu"><svg class="i"><use href="#i-remote"/></svg></span><h3 data-i18n="sv4t">پشتیبانی از راه دور</h3></div><p data-i18n="sv4d">با اجازه شما و جلوی چشم خودتان به سیستم وصل می‌شوم و مشکل را همان‌جا حل می‌کنم.</p></article>
+        <article class="card"><div class="item-h"><span class="sic"><svg class="i"><use href="#i-chip"/></svg></span><h3 data-i18n="sv5t">عیب‌یابی سخت‌افزار</h3></div><p data-i18n="sv5d">قطعه‌های سیستم را بررسی می‌کنم تا علت خرابی پیدا شود و راه‌حل مناسب را پیشنهاد می‌دهم.</p></article>
+        <article class="card"><div class="item-h"><span class="sic cu"><svg class="i"><use href="#i-net"/></svg></span><h3 data-i18n="sv6t">راه‌اندازی شبکه</h3></div><p data-i18n="sv6d">مودم و روتر را تنظیم می‌کنم و سیستم‌ها و پرینترها را به شبکه وصل می‌کنم.</p></article>
+        <article class="card"><div class="item-h"><span class="sic"><svg class="i"><use href="#i-wifi"/></svg></span><h3 data-i18n="sv7t">رفع مشکل شبکه</h3></div><p data-i18n="sv7d">اینترنت یا شبکه داخلی قطع یا کند است، یا سیستم‌ها همدیگر را نمی‌بینند؟ علت را پیدا و درست می‌کنم.</p></article>
+        <article class="card"><div class="item-h"><span class="sic cu"><svg class="i"><use href="#i-idcard"/></svg></span><h3 data-i18n="sv8t">طراحی کارت ویزیت دیجیتال</h3></div><p data-i18n="sv8d">کارت ویزیت دیجیتال با لینک اختصاصی طراحی می‌کنم؛ شماره، واتساپ، ایمیل و اینستاگرام یک‌جا، با ذخیره شماره و اشتراک‌گذاری با یک کلیک. همین صفحه نمونه‌ای از آن است.</p></article>
+      </div>
+    </section>
+
+    <section id="why" class="glass">
+      <h2><span class="hic"><svg class="i"><use href="#i-check"/></svg></span><span data-i18n="wy_h">چرا با من کار کنید</span></h2>
+      <div class="list">
+        <article class="card"><div class="item-h"><span class="sic"><svg class="i"><use href="#i-check"/></svg></span><h3 data-i18n="wy1t">۵ سال تجربه</h3></div><p data-i18n="wy1d">این سال‌ها در یک شرکت واقعی با مشکل‌های روزمره کاربرها کار کرده‌ام، پس هم با موقعیت‌های معمول آشنا هستم و هم با موقعیت‌های غیرمعمول.</p></article>
+        <article class="card"><div class="item-h"><span class="sic"><svg class="i"><use href="#i-check"/></svg></span><h3 data-i18n="wy2t">هم سخت‌افزار، هم نرم‌افزار</h3></div><p data-i18n="wy2d">گاهی مشکل از سیستم‌عامل است و گاهی از یک قطعه یا از شبکه. هر سه را می‌شناسم و علت را درست پیدا می‌کنم.</p></article>
+        <article class="card"><div class="item-h"><span class="sic"><svg class="i"><use href="#i-check"/></svg></span><h3 data-i18n="wy3t">تا حل شدن پیگیری می‌کنم</h3></div><p data-i18n="wy3d">تا مطمئن نشوم مشکل برطرف شده، درخواست را نمی‌بندم.</p></article>
+        <article class="card"><div class="item-h"><span class="sic"><svg class="i"><use href="#i-check"/></svg></span><h3 data-i18n="wy4t">ساده توضیح می‌دهم</h3></div><p data-i18n="wy4d">می‌گویم مشکل چه بود و چه کاری کردم، بدون اصطلاحات پیچیده.</p></article>
+      </div>
+    </section>
+
+    <p class="foot" data-i18n="foot">حامد آزادمنش، کارشناس فنی</p>
+  </main>
+
+  <nav class="tabbar" data-aria="tabs">
+    <div class="tabs">
+      <a class="tab on" href="#about"><svg class="i"><use href="#i-user"/></svg><span data-i18n="t_about">درباره</span></a>
+      <a class="tab" href="#exp"><svg class="i"><use href="#i-brief"/></svg><span data-i18n="t_exp">تجربه</span></a>
+      <a class="tab" href="#svc"><svg class="i"><use href="#i-apps"/></svg><span data-i18n="t_svc">خدمات</span></a>
+      <a class="tab" href="#why"><svg class="i"><use href="#i-check"/></svg><span data-i18n="t_why">چرا من</span></a>
+      <i class="sep" aria-hidden="true"></i>
+      <button class="act share" id="shareBtn" type="button"><svg class="i"><use href="#i-share"/></svg><span data-i18n="share">اشتراک</span></button>
+      <button class="act install" id="installBtn" type="button"><svg class="i"><use href="#i-install"/></svg><span data-i18n="install">نصب</span></button>
+    </div>
+  </nav>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function () {
+  /* ---- Contact details: edit here only ---- */
+  var C = {
+    phone: "+989372301428",
+    email: "hamedrazayee9@gmail.com",
+    ig: "hamedazadmanesh2030"
+  };
+
+  var EN = {
+    status: "Available for projects",
+    mono: "HA", name: "Hamed Azadmanesh", role: "Technical Specialist", co: "Minadent, 5 years",
+    lead: "I've been a technical specialist at Minadent, a software company, for five years, solving computer, printer, network and software problems for users every day. If something is holding up your work, I'm happy to help, on site or remotely.",
+    st1v: "5 years", st1l: "Experience",
+    st2v: "3 areas", st2l: "Expertise",
+    st3v: "Remote", st3l: "Support",
+    inst: "Install on your phone", inst_s: "Adds to your home screen", share: "Share", install: "Install",
+    q_call: "Call", q_call_s: "0937 230 1428",
+    q_wa: "WhatsApp", q_wa_s: "Chat directly",
+    q_mail: "Email", q_mail_s: "Send a message",
+    q_ig: "Instagram", q_ig_s: "View profile",
+    ex_h: "Work experience", ex_role: "Technical Specialist", ex_co: "Minadent, a software company", ex_dur: "5 years, present",
+    ex_sum: "5 years of work experience in the helpdesk field at Minadent, a software company.",
+    ex1: "I take user support requests and follow each one until the problem is fully solved.",
+    ex2: "I look into hardware and software problems on user systems and fix them.",
+    ex3: "I set up printers, install Windows, and put the programs users need on their systems.",
+    ex4: "I set up networks and track down the cause of dropped or slow connections.",
+    ex5: "If the problem doesn't need a visit, I connect remotely and fix it right there.",
+    sv_h: "What I can do for you",
+    sv1t: "Printer setup", sv1d: "I install the driver, connect the printer to your computer or network, and print a test page.",
+    sv2t: "Windows installation", sv2d: "I do a clean install, add the drivers and basic settings, and hand the system back ready to use.",
+    sv3t: "Software installation", sv3d: "I install and set up the programs you need for your work, such as Office and other applications.",
+    sv4t: "Remote support", sv4d: "With your permission, and while you watch, I connect to your computer and fix the problem there.",
+    sv5t: "Hardware troubleshooting", sv5d: "I check the system components to find the cause of the fault and suggest the right fix.",
+    sv6t: "Network setup", sv6d: "I configure the modem and router and connect computers and printers to the network.",
+    sv7t: "Network troubleshooting", sv7d: "Internet or local network down or slow, or computers can't see each other? I find the cause and fix it.",
+    sv8t: "Digital business card design", sv8d: "I design digital business cards with their own link: your number, WhatsApp, email and Instagram in one place, with one-tap saving and sharing. The page you're looking at is an example.",
+    wy_h: "Why work with me",
+    wy1t: "Five years of experience", wy1d: "I've spent these years in a working company handling everyday user problems, so I've seen the usual issues and the unusual ones.",
+    wy2t: "Hardware and software", wy2d: "Sometimes the problem is the operating system, sometimes a component, sometimes the network. I know all three, so I can find the actual cause.",
+    wy3t: "I follow up", wy3d: "I don't close a request until I'm sure the problem is gone.",
+    wy4t: "Plain explanations", wy4d: "I tell you what the problem was and what I did, without piling on technical terms.",
+    foot: "Hamed Azadmanesh, Technical Specialist",
+    t_about: "About", t_exp: "Work", t_svc: "Services", t_why: "Why me",
+    nt_text: "To save the number and see the page properly, open this link in your phone's main browser.", nt_btn: "Copy link"
+  };
+  var A = {
+    fa: { lang: "تغییر زبان", theme: "تغییر تم", quick: "راه‌های ارتباطی", tabs: "بخش‌ها", photo: "عکس حامد آزادمنش", close: "بستن" },
+    en: { lang: "Change language", theme: "Change theme", quick: "Contact options", tabs: "Sections", photo: "Photo of Hamed Azadmanesh", close: "Close" }
+  };
+  var T = {
+    linkCopied: { fa: "لینک کپی شد.", en: "Link copied." },
+    hint: { fa: "از منوی مرورگر گزینه «نصب برنامه» یا «افزودن به صفحه اصلی» را بزنید.", en: "Open your browser menu and choose “Install app” or “Add to Home Screen”." },
+    hintIos: { fa: "در سافاری، دکمه اشتراک‌گذاری مرورگر را بزنید و «افزودن به صفحه اصلی» را انتخاب کنید.", en: "In Safari, tap the Share button and choose “Add to Home Screen”." },
+    hintApp: { fa: "برای نصب، ابتدا لینک را در مرورگر اصلی گوشی باز کنید.", en: "To install, first open this link in your phone's main browser." },
+    manual: { fa: "کپی خودکار ممکن نشد. لینک را از نوار آدرس کپی کنید.", en: "Automatic copy failed. Copy the link from the address bar." }
+  };
+  var TITLE = { fa: "حامد آزادمنش | کارشناس فنی", en: "Hamed Azadmanesh | Technical Specialist" };
+  var SHARE = { fa: "حامد آزادمنش، کارشناس فنی", en: "Hamed Azadmanesh, Technical Specialist" };
+
+  function $(id) { return document.getElementById(id); }
+  var html = document.documentElement;
+  var lang = html.lang === "en" ? "en" : "fa";
+  var nodes = [].slice.call(document.querySelectorAll("[data-i18n]"));
+  nodes.forEach(function (n) { n.setAttribute("data-fa", n.innerHTML); });
+  var ariaNodes = [].slice.call(document.querySelectorAll("[data-aria]"));
+
+  function setLang(l) {
+    lang = l;
+    html.lang = l; html.dir = l === "fa" ? "rtl" : "ltr";
+    nodes.forEach(function (n) {
+      var k = n.getAttribute("data-i18n");
+      n.innerHTML = l === "fa" ? n.getAttribute("data-fa") : EN[k];
+    });
+    ariaNodes.forEach(function (n) {
+      var v = A[l][n.getAttribute("data-aria")];
+      if (n.tagName === "IMG") n.alt = v; else n.setAttribute("aria-label", v);
+    });
+    document.title = TITLE[l];
+    try { localStorage.setItem("lang", l); } catch (e) {}
+  }
+
+  /* contact links */
+  var digits = C.phone.replace(/\D/g, "");
+  $("qCall").href = "tel:" + C.phone;
+  $("qWa").href = "https://wa.me/" + digits;
+  $("qMail").href = "mailto:" + C.email;
+  $("qIg").href = "https://instagram.com/" + C.ig;
+
+  /* toast: floats above the tab bar, so it never moves the page */
+  var toastEl = $("toast"), tt;
+  function toast(k, ms) {
+    toastEl.textContent = T[k][lang];
+    toastEl.classList.add("show");
+    clearTimeout(tt); tt = setTimeout(function () { toastEl.classList.remove("show"); }, ms || 4200);
+  }
+  function copyText(text, okKey) {
+    function ok() { toast(okKey || "linkCopied"); }
+    function legacy() {
+      try {
+        var ta = document.createElement("textarea");
+        ta.value = text; ta.setAttribute("readonly", "");
+        ta.style.cssText = "position:fixed;left:-9999px;top:0;opacity:0";
+        document.body.appendChild(ta); ta.select(); ta.setSelectionRange(0, text.length);
+        var r = document.execCommand("copy"); document.body.removeChild(ta);
+        if (r) ok(); else toast("manual");
+      } catch (e) { toast("manual"); }
+    }
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(text).then(ok, legacy); else legacy();
+  }
+  var pageUrl = location.href.split("#")[0];
+
+  /* share */
+  $("shareBtn").addEventListener("click", function () {
+    if (navigator.share) {
+      navigator.share({ title: TITLE[lang], text: SHARE[lang], url: pageUrl }).catch(function () {});
+    } else { copyText(pageUrl); }
+  });
+
+  /* messenger / in-app browser notice */
+  $("noticeCopy").addEventListener("click", function () { copyText(pageUrl); });
+  $("noticeClose").addEventListener("click", function () { $("notice").style.display = "none"; });
+
+  /* install: the hero card and the bottom-bar button do the same thing */
+  var deferred = null;
+  var instBtns = [$("installBtn"), $("installHero")];
+  function hideInstall() { instBtns.forEach(function (b) { b.hidden = true; }); }
+  window.addEventListener("beforeinstallprompt", function (e) { e.preventDefault(); deferred = e; });
+  window.addEventListener("appinstalled", hideInstall);
+  if ((window.matchMedia && window.matchMedia("(display-mode: standalone)").matches) || navigator.standalone) hideInstall();
+  function doInstall() {
+    if (deferred) { deferred.prompt(); deferred = null; }
+    else if (html.className.indexOf("inapp") > -1) { toast("hintApp", 6500); }
+    else if (/iPad|iPhone|iPod/.test(navigator.userAgent)) { toast("hintIos", 7500); }
+    else { toast("hint", 6500); }
+  }
+  instBtns.forEach(function (b) { b.addEventListener("click", doInstall); });
+
+  /* theme and language */
+  $("themeBtn").addEventListener("click", function () {
+    var next = html.getAttribute("data-theme") === "light" ? "dark" : "light";
+    html.setAttribute("data-theme", next);
+    try { localStorage.setItem("theme", next); } catch (e) {}
+  });
+  $("langBtn").addEventListener("click", function () { setLang(lang === "fa" ? "en" : "fa"); });
+  setLang(lang);
+
+  /* pause the background motion while scrolling, so scrolling stays smooth on slower phones */
+  var st;
+  window.addEventListener("scroll", function () {
+    html.classList.add("scrolling");
+    clearTimeout(st); st = setTimeout(function () { html.classList.remove("scrolling"); }, 160);
+  }, { passive: true });
+
+  /* section highlight in the bottom bar */
+  var tabs = [].slice.call(document.querySelectorAll(".tab"));
+  var secs = tabs.map(function (t) { return document.querySelector(t.getAttribute("href")); });
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (e.isIntersecting) {
+          var i = secs.indexOf(e.target);
+          tabs.forEach(function (t, j) { t.classList.toggle("on", i === j); });
+        }
+      });
+    }, { rootMargin: "-35% 0px -60% 0px" });
+    secs.forEach(function (s) { if (s) io.observe(s); });
+  }
+
+  /* offline support */
+  if ("serviceWorker" in navigator && location.protocol.indexOf("http") === 0) {
+    window.addEventListener("load", function () { navigator.serviceWorker.register("sw.js").catch(function () {}); });
+  }
+})();
+</script>
+</body>
+</html>
